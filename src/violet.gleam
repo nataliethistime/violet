@@ -1,9 +1,9 @@
-import violet/router
 import gleam/erlang/process
 import mist
+import radiate
+import violet/router
 import wisp
 import wisp/wisp_mist
-import radiate
 
 pub fn main() {
   // This sets the logger to print INFO level logs, and other sensible defaults
@@ -26,7 +26,7 @@ pub fn main() {
   let assert Ok(_) =
     radiate.new()
     |> radiate.add_dir(".")
-    |> radiate.on_reload(fn (_state, path) {
+    |> radiate.on_reload(fn(_state, path) {
       wisp.log_info("Change in " <> path <> ", reloading!")
     })
     |> radiate.start()

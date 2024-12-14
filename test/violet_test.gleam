@@ -1,7 +1,7 @@
 import gleeunit
 import gleeunit/should
-import wisp/testing
 import violet/router
+import wisp/testing
 
 pub fn main() {
   gleeunit.main()

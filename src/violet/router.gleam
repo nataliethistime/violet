@@ -1,5 +1,5 @@
-import violet/web
 import gleam/string_tree
+import violet/web
 import wisp.{type Request, type Response}
 
 /// The HTTP request handler- your application!

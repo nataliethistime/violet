@@ -18,5 +18,5 @@ pub fn hello_world_test() {
 
   response
   |> testing.string_body
-  |> should.equal("<h1>Hello, Violet!</h1>")
+  |> should.equal("Hello, Natalie!")
 }

@@ -1,7 +1,7 @@
+import gleam/http.{Get}
 import gleam/string_tree
 import violet/web
 import wisp.{type Request, type Response}
-import gleam/http.{Get}
 
 /// The HTTP request handler- your application!
 ///
